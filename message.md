@@ -7,8 +7,8 @@
 | Base LAN | 1000 | 125 | 119.21 |
 | Real LAN  | 952-1024 | <25 | 119.06 |
  
-Mb = Megabits/
-MB = Megabytes/
+Mb = Megabits\
+MB = Megabytes\
 MiB = Mebibytes
 
 Values have been taken MB on windows with default tasks provided by windows and MiB on arch Linux with default tasks running provided by the aur.
