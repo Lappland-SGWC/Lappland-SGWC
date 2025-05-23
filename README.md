@@ -8,7 +8,7 @@
 
 ## About me
 
-Nothing much to tell. I do stuff like developing usefull apps for your everyday tasks and did develop discord bots for fun and/or boredom. 
+Nothing much to tell. I do stuff like developing usefull apps for your everyday tasks and did develop discord bots for fun and/or boredom.
 
 Some stuff i use:
 
