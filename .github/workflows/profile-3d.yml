@@ -1,47 +1,47 @@
-name: GitHub-Profile-3D-Contrib
+# name: GitHub-Profile-3D-Contrib
 
-on:
-#   schedule:
-#     # Monday, Tuesday, Thursday
-#     - cron: "0 8,9,10,11,12,13,14,15,16 * * 1,2,4"
-#     - cron: "30 8,9,10,11,12,13,14,15,16 * * 1,2,4"
-#     - cron: "15 8,9,10,11,12,13,14,15,16 * * 1,2,4"
-#     - cron: "45 8,9,10,11,12,13,14,15,16 * * 1,2,4"
-#     # Wednesday
-#     - cron: "0 8,9,10,11,12,13,14,15 * * 3"
-#     - cron: "30 8,9,10,11,12,13,14,15 * * 3"
-#     - cron: "15 8,9,10,11,12,13,14,15 * * 3"
-#     - cron: "45 8,9,10,11,12,13,14,15 * * 3"
-#     # Friday
-#     - cron: "0 8,9,10,11,12,13 * * 5"
-#     - cron: "30 8,9,10,11,12,13 * * 5"
-#     - cron: "15 8,9,10,11,12,13 * * 5"
-#     - cron: "45 8,9,10,11,12,13 * * 5"
-#     # Saturday
-#     - cron: "0 12,18,22 * * 6"
-#     # Sunday
-#     - cron: "0 12,18,22 * * 0"
+# # on:
+# #   schedule:
+# #     # Monday, Tuesday, Thursday
+# #     - cron: "0 8,9,10,11,12,13,14,15,16 * * 1,2,4"
+# #     - cron: "30 8,9,10,11,12,13,14,15,16 * * 1,2,4"
+# #     - cron: "15 8,9,10,11,12,13,14,15,16 * * 1,2,4"
+# #     - cron: "45 8,9,10,11,12,13,14,15,16 * * 1,2,4"
+# #     # Wednesday
+# #     - cron: "0 8,9,10,11,12,13,14,15 * * 3"
+# #     - cron: "30 8,9,10,11,12,13,14,15 * * 3"
+# #     - cron: "15 8,9,10,11,12,13,14,15 * * 3"
+# #     - cron: "45 8,9,10,11,12,13,14,15 * * 3"
+# #     # Friday
+# #     - cron: "0 8,9,10,11,12,13 * * 5"
+# #     - cron: "30 8,9,10,11,12,13 * * 5"
+# #     - cron: "15 8,9,10,11,12,13 * * 5"
+# #     - cron: "45 8,9,10,11,12,13 * * 5"
+# #     # Saturday
+# #     - cron: "0 12,18,22 * * 6"
+# #     # Sunday
+# #     - cron: "0 12,18,22 * * 0"
 
-  # workflow_dispatch:
+#   # workflow_dispatch:
 
-  push:
-    branches:
-      - main
+#   # push:
+#   #   branches:
+#   #     - main
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
-    steps:
-      - uses: actions/checkout@v2
-      - uses: yoshi389111/github-profile-3d-contrib@0.6.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-      - name: Commit & Push
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add -A .
-          git commit -m "Data Updated"
-          git push
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     name: generate-github-profile-3d-contrib
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: yoshi389111/github-profile-3d-contrib@0.6.0
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           USERNAME: ${{ github.repository_owner }}
+#       - name: Commit & Push
+#         run: |
+#           git config user.name github-actions
+#           git config user.email github-actions@github.com
+#           git add -A .
+#           git commit -m "Data Updated"
+#           git push
